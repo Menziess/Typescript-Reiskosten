@@ -4,7 +4,7 @@
   "description": "Taxiride price calculator",
   "main": "dist/index.js",
   "scripts": {
-    "pretest": "./node_modules/.bin/tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",
+    "pretest": "tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts --exit",
     "start": "node dist/app.js",
     "dev": "concurrently --kill-others \"tsc --watch\" \"npm run watchify\" \"npm run start\"",
