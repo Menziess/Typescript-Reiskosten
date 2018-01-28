@@ -1,3 +1,3 @@
 
 
-alert('Reiskosten');
+export const hello = () => 'Hello world!';
