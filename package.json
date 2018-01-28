@@ -20,6 +20,7 @@
   "private": true,
   "dependencies": {
     "@types/vue": "^2.0.0",
+    "@types/express": "*",
     "browserify": "^15.0.0",
     "express": "^4.0.35",
     "express-rewrite": "^0.0.4",
@@ -30,7 +31,6 @@
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
-    "@types/express": "*",
     "@types/lodash": "*",
     "@types/mocha": "^2.2.47",
     "@types/node": "^8.5.7",
