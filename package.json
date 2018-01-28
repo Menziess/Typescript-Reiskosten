@@ -6,10 +6,10 @@
   "scripts": {
     "pretest": "./node_modules/.bin/tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts --exit",
-    "start": "node dist/app-server.js",
+    "start": "node dist/app.js",
+    "dev": "concurrently --kill-others \"tsc\" \"npm run watchify\" \"npm run start\"",
     "watchify": "mkdir -p public/js && watchify dist/index.js -o public/js/bundle.js",
-    "browserify": "mkdir -p public/js && browserify dist/index.js -o public/js/bundle.js",
-    "dev": "concurrently --kill-others \"tsc\" \"npm run watchify\" \"npm run start\""
+    "browserify": "mkdir -p public/js && browserify dist/index.js -o public/js/bundle.js"
   },
   "repository": {
     "type": "git",

@@ -48,3 +48,12 @@ workflows:
           filters:
             branches:
               only: master
+deployment:
+  development:
+    branch: develop
+    heroku:
+      appname: reiskosten
+  production:
+    branch: master
+    heroku:
+      appname: reiskosten-live

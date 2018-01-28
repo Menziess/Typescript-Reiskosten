@@ -1,6 +1,6 @@
 # Reiskosten
 
-<!-- [![Build Status](https://travis-ci.org/Menziess/Toxic2.0.svg?branch=master)](https://travis-ci.org/Menziess/Toxic2.0) -->
+[![CircleCI](https://circleci.com/gh/Menziess/Typescript-Reiskosten/tree/master.svg?style=svg&circle-token=b40654524090d03bc32187f67738fde5933f6651)](https://circleci.com/gh/Menziess/Typescript-Reiskosten/tree/master)
 
 <p align="center"><img width="240" src="https://i.imgur.com/qIhHDlH.png"></p>
 
@@ -24,13 +24,13 @@ Both Ubuntu and Windows subsystem for Linux:
 
 Cloning the project:
 
-    $ git clone git@github.com:Menziess/Typescript-Reiskosten.git
-    $ cd Typescript-Reiskosten
+    git clone git@github.com:Menziess/Typescript-Reiskosten.git
+    cd Typescript-Reiskosten
 
 Install using npm
 
-    $ npm install
+    npm install
 
 Run using npm
 
-    $ npm start
+    npm start
