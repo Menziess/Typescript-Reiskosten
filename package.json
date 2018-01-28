@@ -5,15 +5,11 @@
   "main": "dist/index.js",
   "scripts": {
     "pretest": "./node_modules/.bin/tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",
-    "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
-    "prestart": "./node_modules/.bin/tsc",
+    "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts --exit",
     "start": "node dist/app-server.js",
-    "electron": "electron dist/app-client.js",
     "watchify": "mkdir -p public/js && watchify dist/index.js -o public/js/bundle.js",
     "browserify": "mkdir -p public/js && browserify dist/index.js -o public/js/bundle.js",
-    "dev": "concurrently --kill-others \"tsc --watch\" \"npm run watchify\" \"npm run start\"",
-    "watch": "concurrently --kill-others \"tsc --watch\" \"npm run watchify\"",
-    "postinstall": "./node_modules/.bin/tsc && npm run browserify"
+    "dev": "concurrently --kill-others \"tsc\" \"npm run watchify\" \"npm run start\""
   },
   "repository": {
     "type": "git",
@@ -27,6 +23,7 @@
     "@types/lodash": "*",
     "@types/mocha": "^2.2.47",
     "@types/node": "^8.5.7",
+    "@types/supertest": "^2.0.4",
     "browserify": "^15.0.0",
     "chai": "^4.1.2",
     "concurrently": "^3.1.0",

@@ -1,12 +1,13 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
+    "watch": true,
     "pretty": true,
-    "module": "commonjs",
     "strict": true,
-    "allowJs": false,
+    "allowJs": true,
     "noResolve": true,
     "sourceMap": false,
+    "module": "commonjs",
     "noImplicitAny": true,
     "removeComments": true,
     "strictNullChecks": true,
@@ -16,7 +17,8 @@
     "experimentalDecorators": true,
     "outDir": "dist",
     "lib": [
-      "es5"
+      "es5",
+      "dom"
     ]
   },
   "include": [
