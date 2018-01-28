@@ -2,7 +2,6 @@ version: 2
 jobs:
   build:
     working_directory: ~/Typescript-Reiskosten
-    # The primary container is an instance of the first list image listed. Your build commands run in this container.
     docker:
       - image: circleci/node:9.4.0
     steps:
@@ -20,6 +19,7 @@ jobs:
           paths:
             - node_modules
   test:
+    working_directory: ~/Typescript-Reiskosten
     docker:
       - image: circleci/node:9.4.0
     steps:
@@ -45,3 +45,9 @@ workflows:
       - test:
           requires:
             - build
+          filters:
+            branches:
+              only:
+                - master
+                - develop
+                workflows:
