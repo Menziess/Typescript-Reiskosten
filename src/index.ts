@@ -1,5 +1,5 @@
 
 
-export const hello = () => 'Hello world!';
+export const hello = () => 'Hello stefan!';
 
-console.warn("Stefan!");
+console.warn(hello());

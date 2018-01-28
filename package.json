@@ -36,11 +36,14 @@
     "tslint": "^5.8.0",
     "typescript": "^2.1.5",
     "typings": "^2.1.1",
+    "vue": "^2.5.13",
+    "vuetify": "^0.17.6",
     "watchify": "^3.10.0"
   },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Menziess/Typescript-Reiskosten/issues"
   },
-  "homepage": "https://github.com/Menziess/Typescript-Reiskosten#readme"
+  "homepage": "https://github.com/Menziess/Typescript-Reiskosten#readme",
+  "dependencies": {}
 }
