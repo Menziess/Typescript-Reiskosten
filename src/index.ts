@@ -1,5 +1,3 @@
 
+import * as $ from 'jquery';
 
-export const hello = () => 'Hello stefan!';
-
-console.warn(hello());

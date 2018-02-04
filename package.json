@@ -19,15 +19,14 @@
   "author": "Stefan Schenk",
   "private": true,
   "dependencies": {
-    "@types/vue": "^2.0.0",
     "@types/express": "*",
+    "@types/jquery": "^3.3.0",
     "browserify": "^15.0.0",
     "express": "^4.0.35",
     "express-rewrite": "^0.0.4",
+    "jquery": "^3.3.1",
     "tslint": "^5.8.0",
-    "typescript": "^2.1.5",
-    "vue": "^2.5.13",
-    "vuetify": "^0.17.6"
+    "typescript": "^2.1.5"
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
