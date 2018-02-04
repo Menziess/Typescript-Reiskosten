@@ -2,15 +2,16 @@
   "name": "typescript-reiskosten",
   "version": "1.0.0",
   "description": "Taxiride price calculator",
-  "main": "./dist/server.js",
+  "main": "dist/server.js",
   "scripts": {
     "start": "node dist/server.js",
     "dev": "webpack && webpack-dev-server --hot",
     "build": "cross-env NODE_ENV=production webpack && tsc",
     "clean": "rm -rf dist public/js",
-    "pretest": "./node_modules/.bin/tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",
-    "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts --exit",
-    "heroku-prebuild": "npm install --only=dev"
+    "pretest": "tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts --exit",
+    "heroku-prebuild": "npm install --only=dev",
+    "heroku-postbuild": "tsc"
   },
   "repository": {
     "type": "git",
