@@ -5,7 +5,7 @@
   "main": "dist/server.js",
   "scripts": {
     "start": "node dist/server.js",
-    "dev": "webpack && webpack-dev-server --hot",
+    "dev": "webpack-dev-server --hot",
     "build": "cross-env NODE_ENV=production webpack && tsc",
     "clean": "rm -rf dist public/js",
     "pretest": "tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",

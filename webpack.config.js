@@ -7,7 +7,7 @@ let config = {
 
   output: {
     path: path.resolve(__dirname, 'public/js'),
-    publicPath: '/public',
+    publicPath: '/js',
     filename: 'bundle.js'
   },
 

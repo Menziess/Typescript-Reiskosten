@@ -1,4 +1,4 @@
-<!-- src/components/Hello.vue -->
+<!-- src/components/App.vue -->
 
 <template>
     <div>
@@ -12,10 +12,11 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  props: ["name", "initialEnthusiasm"],
+  props: [],
   data() {
     return {
-      enthusiasm: this.initialEnthusiasm
+      name: "Stefan",
+      enthusiasm: 1
     };
   },
   methods: {
