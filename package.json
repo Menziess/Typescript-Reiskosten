@@ -11,7 +11,7 @@
     "pretest": "tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",
     "test": "mocha -r ts-node/register test/**/*.spec.ts --exit",
     "heroku-prebuild": "npm install --only=dev",
-    "heroku-postbuild": "tsc"
+    "heroku-postbuild": "cross-env NODE_ENV=production webpack && tsc"
   },
   "repository": {
     "type": "git",
