@@ -9,8 +9,7 @@
     "build": "cross-env NODE_ENV=production webpack && tsc",
     "clean": "rm -rf dist public/js",
     "pretest": "./node_modules/.bin/tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",
-    "1test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts --exit",
-    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts --exit",
     "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "repository": {
