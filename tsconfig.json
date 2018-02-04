@@ -1,31 +1,14 @@
 {
-  "compileOnSave": true,
-  "compilerOptions": {
-    "watch": false,
-    "pretty": true,
-    "strict": true,
-    "allowJs": true,
-    "noResolve": true,
-    "sourceMap": false,
-    "module": "commonjs",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "strictNullChecks": true,
-    "moduleResolution": "node",
-    "skipDefaultLibCheck": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "outDir": "dist",
-    "lib": [
-      "es5",
-      "dom"
-    ]
-  },
   "include": [
     "src/**/*"
   ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "experimentalDecorators": true
+  }
 }

@@ -1,6 +1,6 @@
 
 import * as request from 'supertest';
-import * as app from '../src/app';
+import * as app from '../src/server';
 import { expect } from 'chai';
 
 describe('index', () => {
