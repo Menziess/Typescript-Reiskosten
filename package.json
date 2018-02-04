@@ -10,6 +10,7 @@
     "clean": "rm -rf dist public/js",
     "pretest": "./node_modules/.bin/tslint src/**/*.ts{,x} --config tslint.json --project tsconfig.json",
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts --exit",
+    "heroku-prebuild": "npm install --only=dev",
     "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "repository": {
@@ -35,17 +36,14 @@
     "@types/node": "^8.5.7",
     "@types/supertest": "^2.0.4",
     "chai": "^4.1.2",
-    "concurrently": "^3.1.0",
     "cross-env": "^5.1.3",
     "mocha": "^5.0.0",
     "supertest": "^3.0.0",
     "ts-loader": "^3.4.0",
     "ts-node": "^4.1.0",
     "typescript": "^2.7.1",
-    "typings": "^2.1.1",
     "vue-loader": "^14.1.1",
     "vue-template-compiler": "^2.5.13",
-    "watchify": "^3.10.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },
