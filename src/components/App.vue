@@ -6,11 +6,9 @@
     <Navbar></Navbar>
 
     <div class="row">
-
       <div class="col s12 m4 l3">
         <Card></Card>
       </div>
-
     </div>
   </div>
 </template>
@@ -27,7 +25,7 @@ import Card from "./Card.vue";
     Card
   }
 })
-export default class Nav extends Vue {}
+export default class App extends Vue {}
 </script>
 
 <style>
