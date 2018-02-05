@@ -31,6 +31,6 @@ Install using npm
 
     npm install
 
-Run using npm
+Run dev using npm
 
-    npm start
+    npm run dev

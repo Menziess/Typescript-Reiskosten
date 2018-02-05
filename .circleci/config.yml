@@ -25,20 +25,27 @@ jobs:
     <<: *defaults
     steps:
       - checkout
+      - run:
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
+          name: Install npm wee
+          command: npm install
+      - run:
           name: Test
           command: npm test
-      # - run:
-      #     name: Generate code coverage
-      #     command: './node_modules/.bin/nyc report --reporter=text-lcov'
       - store_artifacts:
           path: test-results.xml
           prefix: tests
-      # - store_artifacts:
-      #     path: coverage
-      #     prefix: coverage
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
 
 workflows:
   version: 2
