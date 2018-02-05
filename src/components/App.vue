@@ -1,40 +1,33 @@
 <!-- src/components/App.vue -->
 
 <template>
-    <div>
-        <div class="greeting">Hello {{name}}{{exclamationMarks}}</div>
-        <button @click="decrement">-</button>
-        <button @click="increment">+</button>
+  <div>
+
+    <Navbar></Navbar>
+
+    <div class="row">
+
+      <div class="col s12 m4 l3">
+        <Card></Card>
+      </div>
+
     </div>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { Vue, Component, Prop } from "vue-property-decorator";
+import Navbar from "./Nav.vue";
+import Card from "./Card.vue";
 
-export default Vue.extend({
-  props: [],
-  data() {
-    return {
-      name: "Stefan",
-      enthusiasm: 1
-    };
-  },
-  methods: {
-    increment() {
-      this.enthusiasm++;
-    },
-    decrement() {
-      if (this.enthusiasm > 1) {
-        this.enthusiasm--;
-      }
-    }
-  },
-  computed: {
-    exclamationMarks(): string {
-      return Array(this.enthusiasm + 1).join("!");
-    }
+@Component({
+  props: {},
+  components: {
+    Navbar,
+    Card
   }
-});
+})
+export default class Nav extends Vue {}
 </script>
 
 <style>
