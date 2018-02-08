@@ -11,14 +11,14 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 // universal routing and rendering
 app.get('/', (req: any, res: any) => {
-  res.render("index.html");
+	res.render("index.html");
 });
 
 // start the server
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV || 'production';
 app.listen(port, () => {
-  console.info('Server listening on http://localhost:' + port + ', Ctrl+C to stop')
+	console.info('Server listening on http://localhost:' + port + ', Ctrl+C to stop')
 });
 
 module.exports = app;
