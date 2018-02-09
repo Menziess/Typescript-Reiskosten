@@ -27,10 +27,10 @@ Cloning the project:
     git clone git@github.com:Menziess/Typescript-Reiskosten.git
     cd Typescript-Reiskosten
 
-Install using npm
+Install using yarn
 
-    npm install
+    yarn
 
-Run dev using npm
+Run dev using yarn
 
-    npm run dev
+    yarn dev
